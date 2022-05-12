@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: black;
+}
+
+.flex-container{
+    display: flex;
 }
 
 /* header */
@@ -10,6 +15,8 @@ header{
     height: 50px;
     position: fixed;
     width: 100vw;
+    overflow-x: auto;
+    z-index: 1;
 }
 
 .header{
@@ -27,4 +34,30 @@ header{
     color: white;
     padding: 5px;
     border-radius: 5px;
+}
+
+/* main */
+main{
+    padding-top: 100px;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card{
+    position: relative;
+}
+
+.name{
+    color: white;
+    position: absolute;
+    background-color: #4A4A4A;
+    padding: 5px;
+    bottom: 0;
+}
+
+.card img{
+    display: block;
+    height: 100%;
 }
