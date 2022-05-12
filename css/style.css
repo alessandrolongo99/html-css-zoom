@@ -13,10 +13,7 @@
 header{
     background-color: black;
     height: 50px;
-    position: fixed;
-    width: 100vw;
-    overflow-x: auto;
-    z-index: 1;
+    width: 100%;
 }
 
 .header{
@@ -38,11 +35,11 @@ header{
 
 /* main */
 main{
-    padding-top: 100px;
     width: 90%;
-    margin: 0 auto;
+    margin: 50px auto;
     flex-wrap: wrap;
     gap: 10px;
+    height: calc(100vh - 150px)
 }
 
 .card{
@@ -59,5 +56,6 @@ main{
 
 .card img{
     display: block;
-    height: 100%;
 }
+
+/* footer */
